@@ -1,3 +1,5 @@
+/* added color vairables for easier updating */
+/* pulled color scheme from https://www.color-hex.com/color-palette/1046123 */
 :root{
     --background: #3f2222;
     --boxes:  #5b7e48; 
@@ -7,24 +9,22 @@
     --nav: #517140;
     --header: #adbea3;
 }
-
+/* changed colors of links */
 a{
     color: var(--link);
     text-decoration-color: var(--link)	;
 }
-
+/* established background colors */
 body{
     background-color: 	var(--background);
 }
+/* header class styling */
 .header{
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--header);
 }
-
-#avatar{
-    width: 120px;
-}
+/* css for box of on-page links */
 .linkBox{
     width:100%;
     background-color: var(--nav);
@@ -36,7 +36,7 @@ body{
         padding-top: 3%;
         text-decoration: underline ;
     }
-
+    
 }
 /* w3 schools https://www.w3schools.com/css/css_align.asp for inspo on center class  */
 .center{
@@ -46,7 +46,7 @@ body{
     padding: 5%, 10%, 5%, 10%;
     text-align: center;
 }
-
+/* css for on-page links */
 .navLinks{
     margin: 15px;
     font-size: 40px;
@@ -54,6 +54,10 @@ body{
     background-color: var(--nav);
 }
 
+/* css for avatar image */
+#avatar{
+    width: 120px;
+}
 #imgBox{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -61,7 +65,27 @@ body{
     align-self: center;
 
 }
-
+/* styling of challenge boxes */
+.challengeBox{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 5%;
+    container-type: card;
+    box-sizing: border-box;
+    
+    li{
+        display: block;
+        background-color: var(--boxes);
+        flex: 1 0 200px ;
+        
+        ul{
+            flex-shrink: inherit;
+            text-size-adjust: auto;
+            
+        }
+    }
+}
 #challenges li {
     display: inline-block;
     width: 70%;
@@ -88,7 +112,7 @@ body{
         margin-bottom: 5px;
     }
 }
-
+/* contact styling */
 #contactInfo {
     display: block;
     justify-items: center;
@@ -104,7 +128,7 @@ body{
     }
 }
 
-
+/* about me styling */
 #aboutMe{  
     p{
         text-align: center;
@@ -112,26 +136,6 @@ body{
     }
 }
 
-.challengeBox{
-    display:flex;
-    flex-wrap: wrap;
-    margin: 2%;
-    padding: 5%;
-    container-type: card;
-    box-sizing: border-box;
-    
-    li{
-        display: block;
-        background-color: var(--boxes);
-        flex: 1 0 200px ;
-        
-        ul{
-            flex-shrink: inherit;
-            text-size-adjust: auto;
-            
-        }
-    }
-}
 
 #contactInfo{
     margin-top: 20%;
@@ -149,6 +153,8 @@ body{
     margin-bottom: 10%;
     background-color: var(--aboutMe);
 }
+
+/* screen responsiveness */
 
 /* tablet */
 @media screen and (max-width: 769px) {
