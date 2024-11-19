@@ -17,6 +17,7 @@ When creating the challenge boxes there was difficulty getting the content to fi
 
 >* [Used to create CSS variables](https://www.w3schools.com/css/css3_variables.asp)
 >* [Used for center class](https://www.w3schools.com/howto/howto_css_image_center.asp)
+>* [Used to find color scheme](https://www.color-hex.com/color-palette/1046123)
 
 ## Screenshot
 
