@@ -64,15 +64,16 @@ body{
 
 #challenges li {
     display: inline-block;
-    width: 30%;
+    width: 70%;
     margin: 10px;
     padding: 5px;
     height: auto;
 
     img{
-        margin-top: 5%;
+        margin-top: 2%;
         margin-bottom: 5%;
-        image-rendering: auto;
+        width: 100%;
+        height: auto;
     }
     a {
         margin-bottom: 5px;
@@ -147,4 +148,47 @@ body{
     margin-top: 20%;
     margin-bottom: 10%;
     background-color: var(--aboutMe);
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+    #contactInfo{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #aboutMe{
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+/* mobile large */
+@media screen and (max-width: 426px) {
+    
+}
+/* mobile medium */
+@media screen and (max-width: 376px) {
+   .header{
+    font-size: 50px;
+   }
+   .navLinks{
+    margin-top: 0px;
+    margin-bottom: 2.5%;
+   }
+
+   .linkBox{
+    p{
+        font-size: 30px;
+    }
+   }
+
+   #imgBox{
+    margin-bottom: 0%;
+   }
+    
 }
